@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="back">
+        <div class="form-card">
+            <!-- <img id="logo" src="https://cdn-icons-png.flaticon.com/128/733/733553.png"> -->
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">SIGN IN</button>
+                <button type="button" class="toggle-btn" onclick="register()">SIGN UP</button>
+            </div>
+            <div class="icons">
+                <p class="letter">Sign In With</p>
+                <a href="https://www.facebook.com"><img src="https://cdn-icons-png.flaticon.com/128/2175/2175193.png"
+                        alt="Facebook Icon"></a>
+                <a href="https://www.gmail.com.com"><img src="https://cdn-icons-png.flaticon.com/128/104/104093.png"
+                        alt="Google Icon"></a>
+                <a href="https://www.github.com.com"><img src="https://cdn-icons-png.flaticon.com/128/1051/1051326.png"
+                        alt="Github Icon"></a>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" id="username" required>
+                <br>
+                <br>
+                <input type="text" class="input-field" placeholder="Password" id="password" required>
+                <br>
+                <br>
+                <input type="checkbox" class="checkbox">
+                <label for="checkbox"> Remember Me</label>
+                <span><a href="forgot.htlm" target="_blank">Forgot Password?</a></span>
+                <br>
+                <br>
+                <br>
+                <button type="submit" class="submit-btn" onclick="validate()">SIGN IN</button>
+            </form>
+            <div id="sign-up">
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="Full Name" id="full">
+                    <input type="text" class="input-field" placeholder="Choose Username" id="username">
+                    <input type="email" class="input-field" placeholder="example@gamil.com" id="evesicollins7@gmail.com">
+                    <input type="text" class="input-field" placeholder="Password" id="        password: "Mr.Pricipality", 
+">
+                    <input type="text" class="input-field" placeholder="Confirm Password" id="required">
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox"> Remember Me</label>
+                    <span><a href="forgot.htlm" target="_blank">Policy & Privacy</a></span>
+                    <button type="submit" class="submit-btn">SIGN UP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="login.js"></script>
+</body>
+
+</html>
