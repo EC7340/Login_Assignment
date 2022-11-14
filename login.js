@@ -18,17 +18,33 @@ function login() {
 function validate() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
+    // var confirmPassword = document.getElementById("password")
+    // var email = document.getElementById("email").value;
+    // var fullname = document.getElementById("full").value;
+
 
     const user = {
         username: "EC7340",
-        password: "Mr.Pricipality", 
+        password: "Mr.Pricipality",
+        // email: "evesicollins7@gmail.com",
+        // fullname: "Evesi Collins",
+        // confirmPassword: "Mr.Pricipality",
     };
 
     if (username == user.username && password == user.password) {
-        alert ("Successful Login");
+        alert("Successful Login");
         return false;
-    } else{
+    } else {
         alert("Incorrect Username of Password");
         return false;
     }
+
+    // if (fullname == user.fullname && password == user.password && confirmPassword== user.password && email== user.email) {
+    //     alert("Sign Up Successful");
+    //     return false;
+    // } else {
+    //     alert("Incorrect Sign up details");
+    //     return false;
+    // }
+
 }
